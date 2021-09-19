@@ -21,7 +21,7 @@ function Navbar({className}) {
         <Navlink>About Us</Navlink>
       </div>
       <div className="flex flex-row flex-1 justify-center items-center align-center">
-        <Navlink className="bg-green-500">Sign up</Navlink>
+        <Navlink className="bg-indigo-600">Sign up</Navlink>
         <Navlink>Login</Navlink>
       </div>
     </div>

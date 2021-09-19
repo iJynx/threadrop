@@ -1,6 +1,10 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import Features from "../components/Features";
+import Preview from "../components/Preview";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -10,23 +14,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="h-screen flex flex-col">
+      <main className="h-screen flex flex-col divide-y-4 divide-indigo-600 divide-dotted">
         <Navbar />
         <Hero />
-
-      </main>
-
-      <div>feature section</div>
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by Threadrop Inc.
-        </a>
-      </footer>
+        <Features />
+        <Preview />
+        <Contact />
+        <Footer />
+      </main>     
     </div>
   );
 }
